@@ -31,7 +31,7 @@ function App() {
                     item.duration
                   }
                   </h1>
-                  <h1 style={{ color: 'green' }}>
+                  <h1>
                   {
                   item.maturity
                   }
@@ -50,7 +50,19 @@ function App() {
                     {
                   item.rating    
                     }
-                  </h1>  
+                  </h1> 
+                  <h1 style={{
+                  color:
+                   item.metascore >= 0 && item.metascore <= 49
+                  ? 'red'
+                    : item.metascore >= 50 && item.metascore <= 59
+                  ? 'yellow'
+                  : item.metascore >= 60 && item.metascore <= 100
+                  ? 'green'
+                  : 'black'
+                  }}>
+                 {item.metascore}
+                  </h1>
 
                   <img  src={
                    item.poster 
