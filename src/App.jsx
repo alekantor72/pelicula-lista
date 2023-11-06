@@ -16,17 +16,17 @@ function App() {
 
                 <div key={index }>
 
-                  <h1>
+                  <h1 style={{ color: 'blue' }}>
                     {
                     item.title  
                     }
                   </h1>
-                  <h1 style={{ fontSize: '30px' }}>
+                  <h1 style={{ fontSize: '40px' }}>
                   {
                     item .director                  
                   }
                   </h1>
-                  <h1 style={{ fontSize: '24px' }}>
+                  <h1 style={{ fontSize: '30px' }}>
                   {
                     item.duration
                   }
@@ -41,7 +41,7 @@ function App() {
                   item.releaseDate    
                   }
                   </h1>  
-                  <h1 style={{ color: 'blue' }}>
+                  <h1>
                     {
                   item.genres    
                     }
