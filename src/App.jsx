@@ -21,17 +21,17 @@ function App() {
                     item.title  
                     }
                   </h1>
-                  <h1>
+                  <h1 style={{ fontSize: '30px' }}>
                   {
-                    item.director                  
+                    item .director                  
                   }
                   </h1>
-                  <h1>
+                  <h1 style={{ fontSize: '24px' }}>
                   {
                     item.duration
                   }
                   </h1>
-                  <h1>
+                  <h1 style={{ color: 'green' }}>
                   {
                   item.maturity
                   }
@@ -41,7 +41,7 @@ function App() {
                   item.releaseDate    
                   }
                   </h1>  
-                  <h1>
+                  <h1 style={{ color: 'blue' }}>
                     {
                   item.genres    
                     }
@@ -53,8 +53,8 @@ function App() {
                   </h1>  
 
                   <img  src={
-                   item.poster
-                  }   />
+                   item.poster 
+                  }  />
                 </div>
               )
             
